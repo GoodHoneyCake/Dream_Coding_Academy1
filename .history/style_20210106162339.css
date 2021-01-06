@@ -10,9 +10,7 @@
   /* size */
   --base-space: 8px;
   --size-button: 60px;
-  --size-border: 4px;
-  --size-thumbnail: 50px;
-  --font-size: 18px;
+  --button-font-size: 18px;
 
   /* animation */
   --animation-duration: 300ms;
@@ -61,9 +59,8 @@ body {
 }
 
 .colorBtn {
-  font-size: var(--font-size);
-  padding: calc(var(--base-space) * 2);
-  border-radius: var(--size-border);
+  font-size: var(--button-font-size);
+  padding: var(--base-space);
 }
 
 .blue {
@@ -74,30 +71,4 @@ body {
 }
 .pink {
   background-color: var(--color-pink);
-}
-
-.items {
-  width: 60%;
-  height: 60%;
-  list-style: none;
-  padding-left: 0;
-  overflow-y: scroll;
-}
-
-.item {
-  background-color: var(--color-white);
-  display: flex;
-  align-items: center;
-  padding: var(--base-space);
-  margin-bottom: var(--base-space);
-}
-
-.item__thumbnail {
-  width: var(--size-thumbnail);
-  height: var(--size-thumbnail);
-}
-
-.item__description {
-  margin-left: var(--base-space);
-  font-size: var(--font-size);
 }
