@@ -21,30 +21,18 @@ function createHTMLString(item) {
     `;
 }
 
-function onButtonClick(event, items) {
-  const dataset = event.target.dataset;
-  const key = dataset.key;
-  const value = dataset.value;
-
-  if (key == null || value == null) {
-    return;
-  }
-  const filtered = items.filter((item) => item[key] === value);
-  //   console.log(filtered);
-  displayItems(filtered);
-}
-
-function setEventListeners(items) {
+function setEventListeners(item) {
   const logo = document.querySelector(".logo");
-  const buttons = document.querySelector(".buttons");
-  logo.addEventListener("click", () => displayItems(items));
-  buttons.addEventListener("click", (event) => onButtonClick(event, items));
+  const buttons = document.querySelector(".button");
+  logo.addEventListener("click", () => {
+    displayItems(items);
+  });
 }
 
 // main
 loadItems()
   .then((items) => {
     displayItems(items);
-    setEventListeners(items);
+    // setEventListeners(items);
   })
   .catch(console.log);

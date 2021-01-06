@@ -29,9 +29,9 @@ function onButtonClick(event, items) {
   if (key == null || value == null) {
     return;
   }
-  const filtered = items.filter((item) => item[key] === value);
-  //   console.log(filtered);
-  displayItems(filtered);
+  const test = displayItems(items.filter((item) => item[key] === value));
+  console.log(test);
+  displayItems(items.filter((item) => item[key] === value));
 }
 
 function setEventListeners(items) {

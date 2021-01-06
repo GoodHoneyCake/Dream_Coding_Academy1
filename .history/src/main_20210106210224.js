@@ -25,13 +25,6 @@ function onButtonClick(event, items) {
   const dataset = event.target.dataset;
   const key = dataset.key;
   const value = dataset.value;
-
-  if (key == null || value == null) {
-    return;
-  }
-  const filtered = items.filter((item) => item[key] === value);
-  //   console.log(filtered);
-  displayItems(filtered);
 }
 
 function setEventListeners(items) {

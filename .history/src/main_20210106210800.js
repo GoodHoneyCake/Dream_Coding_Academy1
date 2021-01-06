@@ -30,7 +30,7 @@ function onButtonClick(event, items) {
     return;
   }
   const filtered = items.filter((item) => item[key] === value);
-  //   console.log(filtered);
+  console.log(filtered);
   displayItems(filtered);
 }
 
