@@ -5,10 +5,12 @@ function loadItems() {
     .then((json) => json.items);
 }
 
-// Update the list with the given items
 function displayItems(items) {
   const container = document.querySelector(".items");
-  container.innerHTML = items.map((item) => createHTMLString(item)).join("");
+  container.innerHTML = items
+    .map((item) => createHTMLString(item))
+    .Math.random()
+    .join("");
 }
 
 function createHTMLString(item) {

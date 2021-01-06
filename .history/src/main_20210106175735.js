@@ -5,9 +5,10 @@ function loadItems() {
     .then((json) => json.items);
 }
 
-// Update the list with the given items
 function displayItems(items) {
   const container = document.querySelector(".items");
+  const html = items.map((item) => createHTMLString(item));
+  console.log(html);
   container.innerHTML = items.map((item) => createHTMLString(item)).join("");
 }
 
