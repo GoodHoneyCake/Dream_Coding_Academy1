@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "type": "tshirt",
+      "gender": "female",
+      "size": "free",
+      "color": "pink",
+      "image": "../img/pink_t.png"
+    },
+    {
+      "type": "pants",
+      "gender": "female",
+      "size": "free",
+      "color": "pink",
+      "image": "../img/pink_p.png"
+    },
+    {
+      "type": "skirt",
+      "gender": "female",
+      "size": "free",
+      "color": "pink",
+      "image": "../img/pink_s.png"
+    }
+  ]
+}
